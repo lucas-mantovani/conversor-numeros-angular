@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="conteudo">
+        <h2 class="titulo">Conversor de Números: Romanos ⇆ Arábicos</h2>
+        <form (ngSubmit)="conversor(numero)">
+            <div class="form-group">
+                <label for="numero"><b>Número:</b></label>
+                <input [(ngModel)]="numero" type="text" name="numero" class="form-control" placeholder="Entre com um número em Romano ou Arábico:">
+            </div>    
+            <button type="submit" class="btn btn-primary">Converter</button>
+        </form>
+
+        <div class="resposta shadow rounded">
+            <p>{{resultado}}</p>
+        </div>
+    </div>
+</div>
